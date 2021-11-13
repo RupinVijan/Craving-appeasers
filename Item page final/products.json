@@ -1,0 +1,42 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "Burger with fries",
+            "price": 109,
+            "image": "https://images.pexels.com/photos/3219547/pexels-photo-3219547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+            "id": 2,
+            "title": "Pineapple Cake",
+            "price": 499,
+            "image": "https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+            "id": 3,
+            "title": "Pizza",
+            "price": 249,
+            "image": "https://static.toiimg.com/thumb/53110049.cms?width=1200&height=900"
+        },
+        {
+            "id": 4,
+            "title": "Chocolava cake",
+            "price": 99,
+            "image": "https://kirbiecravings.com/wp-content/uploads/2020/05/lava-cake.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Classic Mojito",
+            "price": 199,
+            "image": "https://www.acouplecooks.com/wp-content/uploads/2019/11/Mojito-Recipe-061.jpg"
+
+        },
+        {
+            "id": 6,
+            "title": "Ice-Cream",
+            "price": 199,
+            "image": "https://img.etimg.com/thumb/msid-84939728,width-1200,height-900,imgsize-381352,resizemode-8,quality-100/magazines/panache/from-the-us-russia-to-india-an-ice-cream-bowl-has-a-long-political-history.jpg"
+
+        }
+    ]
+}
