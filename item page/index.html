@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut" href="./images/logo final.png" />
+    <title>Craving Appeasers</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar Section Starts Here -->
+    <nav>
+      <section class="navbar">
+        <div class="container">
+          <div class="logo">
+            <a href="#" title="Logo">
+              <img
+                src="logo_final-removebg-preview.png"
+                alt="Restaurant Logo"
+                class="img-responsive"
+              />
+            </a>
+          </div>
+
+          <div class="menu text-right">
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li>
+                <a href="#">Add Restaurant</a>
+              </li>
+              <li>
+                <a href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </section>
+    </nav>
+    <!-- popular section starts  -->
+
+    <section class="popular" id="popular">
+      <h1 class="heading">Food Items</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <span class="price"> $5 - $20 </span>
+          <img
+            src="https://images.pexels.com/photos/3219547/pexels-photo-3219547.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <h3>tasty burger</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> $5 - $20 </span>
+          <img
+            src="https://images.pexels.com/photos/1070850/pexels-photo-1070850.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <h3>tasty cakes</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> $5 - $20 </span>
+          <img
+            src="https://images.pexels.com/photos/1205648/pexels-photo-1205648.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <h3>tasty sweets</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> $5 - $20 </span>
+          <img
+            src="https://images.pexels.com/photos/1028704/pexels-photo-1028704.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <h3>tasty cupcakes</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> $5 - $20 </span>
+          <img
+            src="https://images.pexels.com/photos/2789328/pexels-photo-2789328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <h3>cold drinks</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+          <span class="price"> $5 - $20 </span>
+          <img
+            src="https://images.pexels.com/photos/9778218/pexels-photo-9778218.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+          />
+          <h3>cold ice-cream</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <a href="#" class="btn">order now</a>
+        </div>
+      </div>
+    </section>
+    <!-- loader  -->
+    <div class="loader-container">
+      <img
+        src="gif.gif"
+        alt=""
+      />
+    </div>
+    <!-- popular section ends -->
+    <script>
+      function loader() {
+        document.querySelector(".loader-container").classList.add("fade-out");
+      }
+
+      function fadeOut() {
+        setInterval(loader, 3000);
+      }
+
+      window.onload = fadeOut();
+    </script>
+  </body>
+</html>
