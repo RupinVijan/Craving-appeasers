@@ -209,9 +209,18 @@
 
     <script type="text/javascript">
         async function ne() {
-            const data = await fetch("http://www.mapquestapi.com/geocoding/v1/reverse?key=VPN8i8JY5HUv0GrKGGEsmpOpD4AFxq0n&location=28.5834625,77.1600089&includeRoadMetadata=true&includeNearestIntersection=true")
-            const resp = await data.json()
-            console.log(resp)
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(async (position) => {
+                    var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                    console.log(positionInfo)
+                    const data = await fetch("http://www.mapquestapi.com/geocoding/v1/reverse?key=VPN8i8JY5HUv0GrKGGEsmpOpD4AFxq0n&location=" + position.coords.latitude + "," + position.coords.longitude + "&includeRoadMetadata=true&includeNearestIntersection=true")
+                    const resp = await data.json()
+                    console.log(resp)
+                });
+
+            } else {
+                alert("Sorry, your browser does not support HTML5 geolocation.");
+            }
         }
         ne();
 
