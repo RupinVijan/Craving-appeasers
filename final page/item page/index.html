@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- StyleSheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  <title>Craving Appeasers Items</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__center container">
+      <div class="nav__logo">
+        <img src="./images/logo_final-removebg-preview.png" alt="">
+      </div>
+
+      <ul class="nav__list">
+        <a href="/index.html" class="login">Home</a>
+        <div class="cart__icon">
+          <h2>Cart</h2>
+          <span class="item__total">0</span>
+        </div>
+      </ul>
+
+      <!-- <div class="hamburger">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-menu"></use>
+        </svg>
+      </div> -->
+    </div>
+  </nav>
+  <!-- Navigation -->
+
+  <!-- Products -->
+  <section class="products">
+    <div class="product__center">
+      <!-- Single Product -->
+      <!-- <div class="product">
+        <div class="image__container">
+          <img src="./images/product-1.jpg" alt="" />
+        </div>
+        <div class="product__footer">
+          <h1>The Original Super Donut</h1>
+          <div class="rating">
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-star-full"></use>
+              </svg>
+            </span>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-star-empty"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Add to Cart</a>
+              <a href="#" class="btn view">View</a>
+            </div>
+            <div class="price">255.99 INR</div>
+          </div>
+        </div>
+      </div> -->
+      <!-- End of Single Product -->
+    </div>
+  </section>
+
+  <section class="cart__overlay">
+    <div class="cart">
+      <span class="close__cart">
+        <svg>
+          <use xlink:href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </span>
+      <h1>Your Cart</h1>
+      <div class="cart__centent">
+        <!-- Cart Item -->
+        <!-- <div class="cart__item">
+          <img src="./images/product-1.jpg" alt="">
+          <div>
+            <h3>The Original Super Donut</h3>
+            <h3 class="price">750 INR</h3>
+          </div>
+          <div>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-angle-up"></use>
+              </svg>
+            </span>
+            <p>3</p>
+            <span>
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-angle-down"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div>
+            <span class="remove__item">
+              <svg>
+                <use xlink:href="./images/sprite.svg#icon-trash"></use>
+              </svg>
+            </span>
+          </div>
+        </div> -->
+      </div>
+
+      <div class="cart__footer">
+        <h3>Total: <span class="cart__total">0 </span> <span> INR</span></h3>
+        <h3><span class="cart__total">Your order is available on COD only</span></h3>
+        <button class="clear__cart btn">Clear Cart</button>
+        <button onclick="alertttt()" class="clear__cart btn">Confirm Order</button>
+      </div>
+    </div>
+  </section>
+  <div class="loader-container">
+    <img src="images/loader.gif" alt="">
+  </div>
+  <footer id="contact">
+    <ul class="list">
+      <div id="icon-container">
+        <a href="#">
+          <div id="icon">
+            <li><i class="fab fa-twitter"></i></li>
+          </div>
+        </a>
+        <a href="#">
+          <div id="icon">
+            <li><i class="fab fa-instagram"></i></li>
+          </div>
+        </a>
+        <a href="#">
+          <div id="icon">
+            <li><i class="fab fa-facebook-f"></i></li>
+          </div>
+        </a>
+        <a href="#">
+          <div id="icon">
+            <li><i class="far fa-envelope"></i></li>
+          </div>
+        </a>
+      </div></a>
+    </ul>
+    <p>&copy 2020-2021, Craving Appeasers</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    function loader() {
+      document.querySelector('.loader-container').classList.add('fade-out');
+    }
+
+    function fadeOut() {
+      setInterval(loader, 2000);
+    }
+
+    window.onload = fadeOut();
+    function alertttt() {
+      var txt;
+      if (confirm("Your order is confirmed and will be delivered in 1 hour")) {
+        txt = "You pressed OK!";
+      } else {
+        txt = "You pressed Cancel!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
+</body>
+
+</html>

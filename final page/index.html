@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="shortcut" href="./images/logo final.png" />
+    <title>Craving Appeasers</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Navbar Section Starts Here -->
+    <nav>
+        <section class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <a href="#" title="Logo">
+                        <img src="./images/logo final.png" alt="Restaurant Logo" class="img-responsive" />
+                    </a>
+                </div>
+
+                <div class="menu text-right">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Add Restaurant</a>
+                        </li>
+                        <li>
+                            <a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </section>
+    </nav>
+    <section class="food-search text-center">
+        <div class="container">
+            <button class="location" type="button" onclick="ne();"><i class="uil uil-location-point"></i>Current
+                Location</button>
+
+            <form>
+                <!-- <div id="result"> -->
+                <!--Position information will be inserted here-->
+                <!-- </div> -->
+                <!-- <button class="location" type="button" onclick="ne();"><i class="uil uil-location-point"></i>Show Position</button> -->
+                <input type="search" name="search" placeholder="Search for Food or Restaurant..." required>
+                <input type="submit" name="submit" value="Search" class="btnn btn-primary">
+            </form>
+
+        </div>
+    </section>
+
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Explore Foods</h2>
+
+            <a href="category-foods.html">
+                <div class="box-3 float-container">
+                    <img src="https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg"
+                        alt="Pizza" class="img-responsive img-curve" />
+
+                    <!-- <h3 class="float-text text-white">Pizza</h3> -->
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="box-3 float-container">
+                    <img src="https://b.zmtcdn.com/data/pictures/1/310301/dfd4a06ddb03ab32129562fc0023412b.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+                        alt="Burger" class="img-responsive img-curve" />
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="box-3 float-container">
+                    <img src="https://curlytales.com/wp-content/uploads/2019/10/Feature-Image_0006_gen-1280x720.jpg"
+                        alt="Momo" class="img-responsive img-curve" />
+                </div>
+            </a>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="container">
+            <h2 class="text-center">Explore Restaurants within 3 kms</h2>
+            <div class="main">
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://www.tripsavvy.com/thmb/oRAIGsQ55Bp-5fcvmUeC0sVPrQQ=/1333x1000/smart/filters:no_upscale()/26-5adafa56c6733500373c3cf5.jpg">
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">Xero Degrees</h2>
+                                <p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
+                                    accusamus?
+                                </p>
+                                <a href="/item page/index.html"><button class="btn card_btn">Read More</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img src="https://mumbaimirror.indiatimes.com/photo/79228089.cms">
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">Punter House</h2>
+                                <p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
+                                    accusamus?
+                                </p>
+                                <a href="/item page/index.html"><button class="btn card_btn">Read More</button></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_image"><img
+                                    src="https://img.etimg.com/thumb/width-1200,height-900,imgsize-829462,resizemode-1,msid-82666514/industry/services/hotels-/-restaurants/staggered-lockdowns-start-to-bite-battered-restaurants.jpg">
+                            </div>
+                            <div class="card_content">
+                                <h2 class="card_title">Big Yellow Door</h2>
+                                <p class="card_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat,
+                                    accusamus?
+                                </p>
+                                <a href="/item page/index.html"><button class="btn card_btn">Read More</button></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- steps section starts  -->
+
+    <div class="step-container">
+
+        <h2 class="heading">How It <span> Works</span></h2>
+
+        <section class="steps">
+
+            <div class="box">
+                <img src="images/step-1-removebg-preview.png" alt="">
+                <h3>Choose your favorite food</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-2-removebg-preview.png" alt="">
+                <h3>Free and fast delivery</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-3-removebg-preview.png" alt="">
+                <h3>Easy payments methods</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-4-removebg-preview.png" alt="">
+                <h3>And finally, enjoy your food</h3>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- loader  -->
+    <div class="loader-container">
+        <img src="images/loader.gif" alt="">
+    </div>
+    <footer id="contact">
+        <ul>
+            <div id="icon-container">
+                <a href="#">
+                    <div id="icon">
+                        <li><i class="fab fa-twitter"></i></li>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="icon">
+                        <li><i class="fab fa-instagram"></i></li>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="icon">
+                        <li><i class="fab fa-facebook-f"></i></li>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="icon">
+                        <li><i class="far fa-envelope"></i></li>
+                    </div>
+                </a>
+            </div></a>
+        </ul>
+        <p>&copy 2020-2021, Craving Appeasers</p>
+    </footer>
+
+    <script type="text/javascript">
+        async function ne() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(async (position) => {
+                    var positionInfo = "Your current position is (" + "Latitude: " + position.coords.latitude + ", " + "Longitude: " + position.coords.longitude + ")";
+                    console.log(positionInfo)
+                    const data = await fetch("http://www.mapquestapi.com/geocoding/v1/reverse?key=VPN8i8JY5HUv0GrKGGEsmpOpD4AFxq0n&location=" + position.coords.latitude + "," + position.coords.longitude + "&includeRoadMetadata=true&includeNearestIntersection=true")
+                    const resp = await data.json()
+                    console.log(resp)
+                });
+
+            } else {
+                alert("Sorry, your browser does not support HTML5 geolocation.");
+            }
+        }
+        ne();
+
+        function loader() {
+            document.querySelector('.loader-container').classList.add('fade-out');
+        }
+
+        function fadeOut() {
+            setInterval(loader, 2000);
+        }
+
+        window.onload = fadeOut();
+
+    </script>
+</body>
+
+</html>

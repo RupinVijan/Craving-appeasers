@@ -23,7 +23,7 @@
       </div>
 
       <ul class="nav__list">
-        <a href="#" class="login">Home</a>
+        <a href="./home page/index.html" class="login">Home</a>
         <div class="cart__icon">
           <h2>Cart</h2>
           <span class="item__total">0</span>
@@ -131,8 +131,9 @@
 
       <div class="cart__footer">
         <h3>Total: <span class="cart__total">0 </span> <span> INR</span></h3>
+        <h3><span class="cart__total">Your order is available on COD only</span></h3>
         <button class="clear__cart btn">Clear Cart</button>
-        <button class="clear__cart btn">Confirm Order</button>
+        <button onclick="alertttt()" class="clear__cart btn">Confirm Order</button>
       </div>
     </div>
   </section>
@@ -170,14 +171,23 @@
   <script src="app.js"></script>
   <script>
     function loader() {
-            document.querySelector('.loader-container').classList.add('fade-out');
-        }
+      document.querySelector('.loader-container').classList.add('fade-out');
+    }
 
-        function fadeOut() {
-            setInterval(loader, 3000);
-        }
+    function fadeOut() {
+      setInterval(loader, 2000);
+    }
 
-        window.onload = fadeOut();
+    window.onload = fadeOut();
+    function alertttt() {
+      var txt;
+      if (confirm("Your order is confirmed and will be delivered in 1 hour")) {
+        txt = "You pressed OK!";
+      } else {
+        txt = "You pressed Cancel!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
   </script>
 </body>
 
