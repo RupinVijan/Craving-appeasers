@@ -17,6 +17,17 @@ router.get('/read/:id',fetchuser1,async(req,res)=>{
         res.status(500).send({"error":"Internal Server error"})
     }
 })
+router.get('/read/id/:id',fetchuser,async(req,res)=>{
+    try {
+        const Kitten = restitem;
+        const userid= req.fluffy
+        const notesdata = await Kitten.find({"restid": userid})
+        res.status(200).send(notesdata);
+
+    } catch (error) {
+        res.status(500).send({"error":"Internal Server error"})
+    }
+})
 
 router.post('/create',fetchuser1,async(req,res)=>{
     try {
