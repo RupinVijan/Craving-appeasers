@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Craving Appeasers Items</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navbar Section Starts Here -->
+  <nav>
+    <section class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#" title="Logo">
+            <img src="logo_final-removebg-preview.png" alt="Restaurant Logo" class="img-responsive" />
+          </a>
+        </div>
+
+        <div class="menu text-right">
+          <ul>
+            <li>
+              <a href="../home page rest/index.html">Home</a>
+            </li>
+            <li>
+              <a href="../login page customer/index.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+    </section>
+  </nav>
+  <form>
+    <input name="name" type="text" class="feedback-input" placeholder="Item Name" />
+    <input name="email" type="text" class="feedback-input" placeholder="Item Price" />
+    <!-- <textarea
+        name="text"
+        class="feedback-input"
+        placeholder="Item Price"
+      ></textarea> -->
+    <input type="file" class="input-field" name="pic" accept="image/*" />
+    <input type="submit" value="SUBMIT" />
+  </form>
+
+  <footer id="contact">
+    <ul>
+      <div id="icon-container">
+        <a href="#">
+          <div id="icon">
+            <li><i class="fab fa-twitter"></i></li>
+          </div>
+        </a>
+        <a href="#">
+          <div id="icon">
+            <li><i class="fab fa-instagram"></i></li>
+          </div>
+        </a>
+        <a href="#">
+          <div id="icon">
+            <li><i class="fab fa-facebook-f"></i></li>
+          </div>
+        </a>
+        <a href="#">
+          <div id="icon">
+            <li><i class="far fa-envelope"></i></li>
+          </div>
+        </a>
+      </div></a>
+    </ul>
+    <p>&copy 2020-2021, Craving Appeasers</p>
+  </footer>
+
+
+  <!-- loader  -->
+  <div class="loader-container">
+    <img src="gif.gif" alt="" />
+  </div>
+  <!-- popular section ends -->
+  <script>
+    function loader() {
+      document.querySelector(".loader-container").classList.add("fade-out");
+    }
+
+    function fadeOut() {
+      setInterval(loader, 2000);
+    }
+
+    window.onload = fadeOut();
+  </script>
+</body>
+
+</html>
